@@ -1,0 +1,44 @@
+.square {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background: #950000;
+}
+
+
+.circle {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background: #009578;
+    border-radius: 50%;
+}
+
+.supports-hidden {
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.pulse {
+    animation: pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(0.75);
+    }    
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.25);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(0.75);
+    }
+}
